@@ -24,7 +24,7 @@ function createGalleryItemsMarkup(items) {
     .join("");
 }
 
-//варіант 1
+//варіант 2 (не годиться)
 /*const list = document.querySelector(".gallery");
 const createMarkup = galleryItems
   .map((link) => (
@@ -42,7 +42,7 @@ const createMarkup = galleryItems
   .join("");
 list.innerHTML = createMarkup;*/
 
-//варіант 2
+//варіант 3 (не годиться)
 /*const list = document.querySelector(".gallery");
 list.innerHTML("beforeend", createMarkup(galleryItems));
 
@@ -63,7 +63,7 @@ function createMarkup(galleryItems) {
     .join("");
 }*/
 
-//варіант 3
+//варіант 4 (не годиться)
 /*function createGalleryItem(item) {
   return `
     <li class="gallery__item">
