@@ -23,16 +23,16 @@ function createGalleryItemsMarkup(items) {
     })
     .join("");
 }
-function onImgClick(e) {
-  e.preventDefault();
-  if (e.target.nodeName !== "IMG") return;
+function onImgClick(evnt) {
+  evnt.preventDefault();
+  if (evnt.target.nodeName !== "IMG") return;
 
-  const isItemImage = e.target.classList.contains(
+  const isItemImage = evnt.target.classList.contains(
     "gallery__image"
   );
   if (!isItemImage) return;
 
-  const currentImgUrl = e.target.dataset.source;
+  const currentImgUrl = evnt.target.dataset.source;
 
   const instance = basicLightbox.create(
     `
