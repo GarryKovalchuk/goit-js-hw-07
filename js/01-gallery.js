@@ -52,13 +52,14 @@ function onImgClick(evnt) {
   );
   instance.show();
 
-  function onEscKeyPress(e) {
+  function onEscKeyPress(evnt) {
     const ESC_KEY_CODE = "Escape";
-    const isEscKey = e.code === ESC_KEY_CODE;
+    const isEscKey = evnt.code === ESC_KEY_CODE;
     if (!isEscKey) return;
     instance.close();
   }
 }
+console.log(galleryItems);
 
 //варіант 2 (не годиться)
 /*const list = document.querySelector(".gallery");
@@ -129,4 +130,3 @@ document.querySelector(".gallery").innerHTML =
 gallery.addEventListener("click", (event) => {
   event.preventDefault();
 });*/
-console.log(galleryItems);
