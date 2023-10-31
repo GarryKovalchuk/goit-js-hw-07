@@ -28,6 +28,13 @@ list.insertAdjacentHTML("beforeend", itemsMarkup);
 const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
   captionDelay: 250,
+  captionPosition: "bottom",
 });
+
+/*let lightbox = new SimpleLightbox(".gallery a", {
+  captionsData: "alt",
+  captionPosition: "bottom",
+  captionDelay: 250,
+});*/
 
 console.log(galleryItems);
