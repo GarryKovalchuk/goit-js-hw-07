@@ -22,7 +22,7 @@ function createGalleryItemsMarkup(items) {
     })
     .join("");
 }
-galleryRef.innerHTML = itemOfImgString;
+galleryContainer.insertAdjacentHTML("beforeend", markup);
 
 const lightbox = new SimpleLightbox(".gallery a", {
   captionsData: "alt",
